@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* mismo estilo para todas las cajas */
+.caja {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    margin: 50px;
+    padding: 25px;
+    font-size: 80px;
+
+}
+
+/* posicionamiendo fijo, para un elemento en especifico de la pagina */
+.posicionada {
+    background-color: rgb(218, 58, 79);
+    position: fixed; /* Define la posición del elemento como fija, Permanece en su lugar incluso cuando el usuario hace scroll en la página */
+    top: 200px;
+    left: 200px;
+}

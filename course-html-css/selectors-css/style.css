@@ -1,0 +1,53 @@
+/* aplica un margen a todos los elementos de la página */
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+/* selector de tipo (type selector) aplica estilos a todos los elementos de un tipo específico (etiqueta) */
+body {
+    font-size: 20px;
+    color: rgb(15, 14, 14);
+    background: rgb(199, 192, 185);
+}
+
+/* selector de etiquetas aplica estilos comunes a h1, h2 y h3 */
+h1, h2, h3 {
+    font-family: Arial, sans-serif;
+    color: navy;
+}
+
+/* selector de clase (Class Selector) Aplica estilos a los elementos que tienen una clase específica (class) */
+.contenedor {
+    background: rgb(137, 243, 140);
+    font-size: 50px;
+    color: red;
+    font-weight: bold;
+}
+
+/*  selector decendiente aplica estilo a todos los elementos p dentro de un div */
+div p {
+    line-height: 1.5;
+}
+
+/* aplica estilo a los selectores hijos directos */
+div > p {
+    color: red;
+}
+ 
+/*  aplica estilo a los selectores de atributos */
+input[type = "password"]  {
+    color: rgb(0, 0, 255);
+}
+
+input[type = "text"] {
+    color: darkorange;
+}
+
+/* aplica estilo a enlaces que contengan "google" en su href */
+a[href*="google"] {
+    color: rgb(251, 255, 0);
+}
+

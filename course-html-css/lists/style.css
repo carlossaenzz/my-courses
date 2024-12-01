@@ -1,0 +1,10 @@
+ 
+ul {
+    /* list-style: circle;  */ /* Cambia los marcadores de la lista a un círculo hueco (no relleno) */
+    font-size: 20px; /* Esto afecta únicamente al texto de los elementos <li> de esa lista */
+}
+
+ol {
+    font-size: 20px;
+}
+

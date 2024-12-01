@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    
+}
+
+/* Estilos para centrar Un div, caja o contenedor */
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.div {
+    display: block;
+    text-align: center;
+    background-color: rgb(25, 0, 255);
+    width: 300px;
+    height: 300px;
+    font-size: 100px;
+    padding: 80px;
+    border: 15px solid rgb(8, 8, 2);
+    color: white;
+    border-style: double;
+}
+
+/* Efecto :hover Cambia de color al pasar el cursor */
+.div:hover {
+    background: rgb(255, 255, 124);
+    color: rgb(248, 45, 45);
+}

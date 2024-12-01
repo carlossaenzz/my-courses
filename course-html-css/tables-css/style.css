@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex; /* Activa el modelo flexbox */
+    justify-content: center; /* Centra la tabla horizontalmente */
+    align-items: center; /* Centra la tabla verticalmente */
+    height: 100vh; /* Hace que el contenedor (body) ocupe toda la altura de la ventana */
+    margin: 0;
+}
+
+table,td, th {
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+
+table {
+    border-collapse: collapse;
+    width: 500px;
+    text-align: center;
+}
+
+th, td {
+    padding: 20px 20px;
+}
+
+th {
+    background: #009ddc;
+    color: #ffffff;
+}
+
+
+tr:hover {
+    background: #81c9ce;
+}

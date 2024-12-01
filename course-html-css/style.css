@@ -1,0 +1,45 @@
+/* Reset: Asegura que todos los elementos tengan el mismo margen y relleno por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+ 
+}
+
+/* Estilos para centrar el contenido en la pantalla */
+.hello-world {
+    display: flex; /* Flexbox para centrar el contenido */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Hace que el contenedor ocupe toda la altura de la pantalla */
+    background: #566573;
+    color: #DAF7A6;
+}
+
+/* estilos para la lista (ul): Organiza las letras en fila */
+ul {
+    display: flex; /* flexbox para alinear las letras horizontalmente */
+    list-style: none; /* elimina los puntos de la lista */
+}
+
+/* estilos para cada elemento de la lista (li): Aplica un estilo común a cada una de las letras */
+li {
+    font-size: 50px;
+    letter-spacing: px; /* espacio entre las letras */
+    transition: 1s; /* transición suave al aplicar cambios (como el hover) */
+}
+
+/* estilo para las letras de "Hello" y "World": Añade espacio entre ellas */
+.hello {
+    margin-right: 15px; 
+}
+
+.world {
+    margin-left: 15px;
+}
+
+/* efecto hover al pasar el cursor sobre las letras  */
+li:hover {
+    filter: blur(75px); /* aplica un filtro de desenfoque */
+    opacity: 1; /* hace que la letra sea completamente transparente */
+}

@@ -1,0 +1,17 @@
+body {
+    background: url(./img/montañas-lago.jpg) no-repeat center center fixed; /* establece una imagen de fondo con la ruta */
+    background-size: cover; /* hace que la imagen de fondo cubra toda la ventana manteniendo sus proporciones. */
+    margin: 0;
+    padding: 0; /* elimina cualquier relleno predeterminado que el navegador pueda aplicar al cuerpo. */
+    height: 100vh; /* asegura que el cuerpo ocupe toda la altura de la ventana */
+    color: rgba(255, 255, 255, 0.899); 
+
+}
+
+h1 {
+    text-align: center;
+}
+
+h1, article {
+    padding: 20px;
+}

@@ -1,0 +1,14 @@
+
+.texto {
+    text-shadow: 10px 10px 12px rgb(30, 26, 235); /* con la propiedad text-shadow le puedo dar sombras a los textos*/
+    font-size: 100px;
+    color: beige;
+}
+.caja {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    background: rgb(255, 0, 0);
+    box-shadow: 5px 0 25px rgb(8, 8, 8); /* con la propiedad box-shadow le puedo dar sombras a las cajas*/
+    
+}

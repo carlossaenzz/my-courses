@@ -1,0 +1,91 @@
+body {
+    background: #e2e1e1;  /* color de fondo claro para la página */
+    font-family: Arial, Helvetica, sans-serif;  
+}
+
+/* estilo de los contenedores de los botones (div) */
+div {
+    margin: 20px 0;  /* márgen vertical para separar los bloques de botones */
+
+    /* estilos para centar el contenido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* estilo para los botones con clase 'btn' */
+.btn {
+    background: rgb(34, 21, 83);  /* color de fondo morado oscuro */
+    color: #fff;  /* texto blanco */
+    font-size: 16px;  /* tamaño de fuente de 16px */
+    text-decoration: none;  /* elimina el subrayado de los enlaces */
+    padding: 15px 20px;  /* espaciado dentro del botón */
+    display: inline-block;  /* hace que los botones se alineen horizontalmente */
+    margin: 0 10px;  /* márgenes laterales para separar los botones */
+}
+
+/* efecto hover para los botones con clase 'btn' */
+.btn:hover {
+    background-color: rgba(255, 166, 0, 0.582);  /* cambia el color de fondo a un amarillo anaranjado cuando el ratón pasa sobre el botón */
+}
+
+/* estilo para los botones con clase 'btn2' */
+.btn2 {
+    background: grey;  /* fondo gris */
+    color: white;  /* texto blanco */
+    font-size: 20px;  /* tamaño de fuente más grande */
+    text-decoration: none;  /* elimina el subrayado */
+    padding: 30px 35px;  /* espaciado más grande dentro del botón */
+    display: inline-block;  /* alineación horizontal */
+    border-radius: 50px;  /* hace que el botón sea circular */
+}
+
+/* efecto hover para los botones con clase 'btn2' */
+.btn2:hover {
+    background: rgb(141, 70, 255);  /* cambia el fondo a un color morado cuando se pasa el ratón */
+}
+
+/* botones pequeños */
+.small {
+    font-size: 15px;  /* fuente más pequeña */
+    padding: 10px 15px;  /* espaciado dentro del botón más pequeño */
+}
+
+/* botones medianos */
+.medium {
+    font-size: 16px;  /* fuente de tamaño medio */
+    padding: 15px 20px;  /* espaciado intermedio dentro del botón */
+}
+
+/* botones grandes */
+.big {
+    font-size: 18px;  /* fuente más grande */
+    padding: 20px 25px;  /* espaciado grande dentro del botón */
+}
+
+/* botones extra grandes */
+.extra-big {
+    font-size: 20px;  /* fuente extra grande */
+    padding: 25px 30px;  /* espaciado más amplio dentro del botón */
+}
+
+/* color azul */
+.azul {
+    background-color: blue;  /* fondo azul */
+}
+
+/* color verde */
+.verde {
+    background-color: green;  /* fondo verde */
+}
+
+/* color rojo */
+.rojo {
+    background-color: red;  /* fondo rojo */
+}
+
+/* estilo para agregar bordes a los botones */
+.border {
+    border-radius: 5px 12px 18px 24px;  /* Bordes redondeados con diferentes proporciones para crear una forma personalizada */
+}
