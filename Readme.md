@@ -1,13 +1,6 @@
-[English 🇺🇸](Readme_es.md)
-# Mis Cursos de HTML y CSS
+
+# Mis Cursos de HTML y CSS  [English 🇺🇸](Readme_es.md)
 Este repositorio contiene los ejercicios que he realizado durante mi aprendizaje en HTML y CSS. He estado aprendiendo de manera autodidacta y a través de varios recursos en línea, y quiero compartir los avances que he logrado.
-
-## Contenido
-
-- **HTML**: Estructura básica de una página web, elementos HTML, etiquetas semánticas.
-- **CSS**: Estilos básicos, selectores, propiedades, diseño con Flexbox y Grid.
-- **Responsive Design**: Cómo hacer sitios web adaptables a diferentes tamaños de pantalla.
-
 ## Aprendizajes Clave
 
 ### HTML
