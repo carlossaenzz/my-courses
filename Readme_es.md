@@ -1,13 +1,5 @@
-[Español 🇪🇸](Readme.md)
-# My HTML and CSS Courses
+# My HTML and CSS Courses  [Español 🇪🇸](Readme.md)
 This repository contains the exercises I have completed during my HTML and CSS learning journey. I have been learning in a self-taught manner and through various online resources, and I want to share the progress I have made.
-
-## Content
-
-- **HTML**: Basic structure of a webpage, HTML elements, semantic tags.
-- **CSS**: Basic styling, selectors, properties, layout with Flexbox and Grid.
-- **Responsive Design**: How to make websites adaptable to different screen sizes.
-
 ## Key Learnings
 
 ### HTML
