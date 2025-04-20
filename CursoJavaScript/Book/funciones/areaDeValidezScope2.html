@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validez de variables y constantes</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function mediaConLet(números) {
+            let suma = 0;
+            let índice; // se declara fuera del bucle 
+            // let índice = agregue esta variable antes del bucle for ya que en el ejemplo no estaba esto imprime el resultado en la consola
+            for (let índice = 0; índice < números.length; índice += 1) {
+                suma += números[índice];
+            }
+
+            let media = suma / números.length;
+            return `Los ${números.length} números tiene suma=${suma} y media=${media}.El índice es ${índice} `;
+            // return `Los ${números.length} números tiene suma = ${suma} y media = ${media}`;
+        }
+        console.log(mediaConLet([84, 36, 61, 67, 22, 20, 22, 16, 79, 54]));
+
+    </script>
+</body>
+
+</html>

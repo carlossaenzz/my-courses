@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMAScript JavaScript</title>
+</head>
+
+<body>
+
+        <p id="output"></p>
+        <img id="carita" />
+        <div id="output1"></div>
+
+        <script type="text/javascript">
+            const día = new Date().getDay();
+            const valorSrc = `carita${día}.png`;
+            let mensaje;
+            if (día === 0 || día === 6) mensaje = 'buen fin de semana';
+            else mensaje = `Faltan ${6 - día} días para el fin de semana`;
+
+            const mensaje1 = `<h1>Hello World</h1> <p>¿qué tienes programado para hoy?</p>`
+            document.getElementById('output').innerHTML = mensaje;
+            document.getElementById('carita').src = valorSrc;
+            document.getElementById('output1').innerHTML = mensaje1;
+        </script>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope2 función anónima</title>
+</head>
+
+<body>
+
+    <p id="output"></p>
+    <img id="carita" src="" alt="">
+    
+    <script type="text/javascript">
+
+        function mediaConVar2(números) {
+            var suma = 0, índice, media;
+            for (índice = 0; índice < números.length; índice += 1) {
+                suma += números[índice]
+            }
+
+            media = suma / números.length;
+            return `Los ${números.length} números tienen suma=${suma} y  media=${media}.El índice es ${índice}`;
+        }
+        console.log(mediaConVar2([1, 2, 3, 4, 5, 6, 7, 8, 9]));
+
+    </script>
+</body>
+
+</html>

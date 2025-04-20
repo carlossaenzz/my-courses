@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>expresiones regulares</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="texto">Una frase:</label>
+        <input type="text" id="texto" style="width: 300px;">
+        <button type="button" onclick="encuentraPalabras()" id="boton">Envía el dato insertado</button>
+    </form>
+    <p id="output"></p>
+    <script>
+        function encuentraPalabras() {
+            let texto = document.getElementById('texto').value;
+            //probar con un texto que contiene un carattere especial del tipo ? y mostrar la diferencia entre sticky e non sticky
+            let patron = /\s*[a-zA-Z]+\s*/g;
+            // let patron_ignoreCase = /\s*[a-z]+\s*/gi;
+            let palabras = texto.match(patron);
+            console.log(palabras);
+            let textoAEscribir = '';
+
+            if (palabras) {
+                palabras.forEach(function (elemento, indice) {
+                    textoAEscribir = `${textoAEscribir} ${indice + 1}: ${elemento.trim()}<br>`;
+                    console.log(textoAEscribir);
+                })
+                document.getElementById('output').innerHTML = `El texto insertado contiene ${palabras.length} palabras: <br> ${textoAEscribir}`;
+            }
+            else {
+                document.getElementById('output').innerHTML = "El texto insertado no contine ninguna palabra";
+            }
+        }
+    </script>
+</body>
+
+</html>

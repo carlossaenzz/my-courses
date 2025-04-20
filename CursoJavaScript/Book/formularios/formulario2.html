@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+
+<body>
+
+    <form action="">
+        <input type="date" id="fecha">
+        <button type="button" onclick="cuantosDias()" id="boton">Calcula cuantos días faltan para la fecha
+            seleccionada</button>
+    </form>
+
+    <p id="output"></p>
+
+    <script>
+
+        let hoy = new Date();
+        function cuantosDias() {
+            
+            const partesFecha = document.getElementById('fecha').value.split('-');
+            const fechaEvento = new Date(partesFecha[0], partesFecha[1] - 1, partesFecha[2]);
+            console.log(fechaEvento);
+
+            // let fechaEvento = new Date(document.getElementById("fecha").value);
+            // console.log(fechaEvento);
+            // fechaEvento.setHours(0, 0, 0, 0);
+
+            document.getElementById("output").innerHTML = fechaEvento;
+            const milSegEnUnDía = 1000 * 60 * 60 * 24; //los milisegundos en un día
+            hoy.setHours(0, 0, 0, 0);
+            const diferenciaHoras = Math.abs(fechaEvento.getTimezoneOffset() / 60) - Math.abs(hoy.getTimezoneOffset() / 60);
+            hoy.setHours(hoy.getHours() - diferenciaHoras);
+            if (fechaEvento > hoy) {
+                document.getElementById("output").innerHTML = `Faltan${(fechaEvento.getTime() - hoy.getTime()) / milSegEnUnDía} días`;
+            } else {
+                document.getElementById("output").innerHTML = 'la fecha ya ha pasado'
+            }
+        }
+        let año = hoy.getFullYear();
+        let mes = hoy.getMonth() + 1;
+        let dia = hoy.getDate();
+        let fechaActual = `${año}-${mes}-${dia}`;
+        document.getElementById('fecha').value = fechaActual;
+
+    </script>
+
+</body>
+
+</html>

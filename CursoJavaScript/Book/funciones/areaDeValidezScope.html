@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fincionesAnonimas2</title>
+</head>
+
+<body>
+
+    <p id="output"></p>
+    <img id="carita" alt="">
+
+    <script type="text/javascript">
+
+        function mediaConVar1(números) {
+            var suma = 0;
+            for (var índice = 0; índice < números.length; índice += 1) {
+                suma += números[índice];
+            }
+            
+            var media = suma / números.length;
+            console.log(`media = ${media}`);
+
+            return `Los ${números.length} números tienen suma=${suma} y media=${media}.El índice es ${índice}`;
+        }
+        console.log(([84, 36, 61, 67, 22, 20, 22, 16, 79, 54, 35]));
+
+    </script>
+</body>
+
+</html>

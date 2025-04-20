@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validez de variables y constantes</title>
+</head>
+
+<body>
+    <p id="output"></p>
+    <img id="carita" src="" alt="">
+
+    <script type="text/javascript">
+
+        function EsFinDeSemana() {
+            const día = new Date().getDay();
+            if (día === 0 || día === 6) return true;
+            else return false
+        }
+        
+    const valorSrc = EsFinDeSemana() ? 'CaritaFeliz.png' : 'CaritaTriste.png';
+    const mensaje = EsFinDeSemana() ? 'Diviértete' : 'Venga, que ya falta poco';
+
+
+    document.getElementById('carita').src = valorSrc;
+    document.getElementById('output').innerHTML = mensaje;
+
+    </script>
+    
+</body>
+
+</html>

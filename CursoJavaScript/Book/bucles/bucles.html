@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucle | FOR | Con Indíce</title>
+</head>
+
+<body>
+    <ul id="numeros">
+        <li value="1">uno</li>
+        <li value="2">dos</li>
+        <li value="3">tres</li>
+    </ul>
+    <p id="output"></p>
+
+
+    <script type="text/javascript">
+        const listaLI = document.querySelectorAll('#numeros li');
+
+        for (let i = 0; i < listaLI.length; i += 1) {
+            console.log(`i=${i} value=${i + 1} elemento=${listaLI.item(i)}`);
+            alert(`i=${i} value=${i + 1} elemento=${listaLI.item(i)}`);
+            listaLI.item(i).value = i + 1;
+        }
+        // const mensaje = `Hay ${listaLI.length} elementos en la lista UL "números"`;
+        // document.getElementById('output').innerHTML = mensaje
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funcionesParametros</title>
+</head>
+
+<body>
+
+    <p id="output"></p>
+    <img id="carita" src="" alt="">
+
+    <script type="text/javascript">
+        function quéDía(nombre) {
+            const día = new Date().getDay();
+            const nombreDía = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves',
+                'Viernes', 'Sábado'];
+            return `Hola ${nombre} ! Feliz ${nombreDía[día]}`;
+        }
+        document.getElementById('output').innerHTML = quéDía('Carlos Sáenz')
+
+    </script>
+
+</body>
+
+</html>

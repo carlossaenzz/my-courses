@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones</title>
+</head>
+
+<body>
+
+    <p id="output"></p>
+    <img id="carita">
+
+    <script type="text/javascript">
+        function esFinDeSemana() {
+            const día = new Date().getDay();
+            if (día === 0 || día === 6) return true;
+            else return false
+        }
+
+        const valorSrc = esFinDeSemana() ? 'CaritaFeliz.png' : 'CaritaFeliz.png';
+        const mensaje = esFinDeSemana() ? 'Diviértete' : 'Vamos, que ya falta poco';
+
+        document.getElementById('carita').src = valorSrc;
+        document.getElementById('output').innerHTML = mensaje
+
+        // let valorSrc;
+        // if (esFinDeSemana() === true) valorSrc = 'CaritaFeliz.png';
+        // else valorSrc = 'CaritaFeliz.png';
+        // document.getElementById('carita').src = valorSrc;
+    </script>
+
+</body>
+
+</html>

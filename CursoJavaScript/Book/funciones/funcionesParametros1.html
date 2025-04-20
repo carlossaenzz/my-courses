@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funcionesParametros1</title>
+</head>
+
+<body>
+    <p id="output"></p>
+    <img id="carita" src="" alt="">
+
+    <script id="text/javascript">
+
+        function cuantosDías(año, mes, día, NombreEvento) {
+            let hoy = new Date();
+            const milsegEnUnDía = 1000 * 60 * 60 * 24; // los milisegundos de un día
+            // indico a media noche la fecha de hoy, de no ser así la resta entre ambas
+            // fechas nos dará la hora correcta
+            hoy.setHours(0, 0, 0, 0);
+            const fechaEvento = new Date(año, mes - 1, día);
+
+            console.log(fechaEvento);
+            console.log(hoy);
+
+            const diferenciasHoras = Math.abs(fechaEvento.getTimezoneOffset() / 60)
+                - Math.abs(hoy.getTimezoneOffset() / 60);
+            hoy.setHours(hoy.getHours() - diferenciasHoras);
+
+            if (fechaEvento > hoy) {
+                return `Faltan ${(fechaEvento.getTime() - hoy.getTime()) / milsegEnUnDía} días para ${NombreEvento}`;
+            } else {
+                return 'La fecha ya pasó'
+            }
+        }
+        document.getElementById('output').innerHTML = cuantosDías(2026, 3, 2,
+            'Navidad');
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fuuncionesArray</title>
+</head>
+
+<body>
+
+    <p id="output"></p>
+    <img id="carita" src="" alt="">
+    <script type="text/javascript">
+
+        const día = new Date().getDay();
+        function esFinDeSemana() {
+            return día === 0 || día === 6;
+        }
+
+        function queDía() {
+            const nombreDía = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves',
+                'Viernes', 'Sábado'];
+            return nombreDía[día];
+        }
+
+        const valorSrc = esFinDeSemana() ? 'CaritaFeliz.png' : 'CaritaTriste.png';
+        document.getElementById('carita').src = valorSrc;
+        document.getElementById('output').innerHTML = queDía();
+
+
+
+    </script>
+</body>
+
+</html>
